@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <a href="#profile"
+        ><img src="./assets/signature.png" alt="Alannah Shinde" class="logo"
+      /></a>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <a href="#profile"
+        ><img src="./assets/signature.png" alt="Alannah Shinde" class="logo"
+      /></a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/about-pic.png"
+          alt="Alannah Shinde profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello! I'm</p>
+        <h1 class="title">Alannah Shinde</h1>
+        <p class="section__text__p2">Graduate Certificate student in Applied Computing at the University of Hawaiʻi at Mānoa, interested in front-end development, data science, and artificial intelligence.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/alannah-shinde-98628541a/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My github profile"
+            class="icon"
+            onclick="window.open('https://github.com/alanshin32-svg', '_blank')"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Before pursuing applied computing, I earned my Bachelor of Science in Nursing from the University of Hawaiʻi at Hilo, where I developed strong communication, teamwork, and problem-solving skills while working with complex, real-world challenges.
+            </p>
+            <p>
+              I have always been drawn to understanding the systems that support people, and this has shaped my motivation to explore how they can be improved through thoughtful, human-centered design.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <ul class="education-list">
+                <li>Data Science Intern: Akamai Internship Program (2022)</li>
+                <li>Clinical Nursing Student: Life Care Center of Hilo, Hilo Benioff Medical Center, Hilo VA Clinic (2024–2026)</li>
+                <li>Associate Editor: Ke Kalahea, student-run newspaper of UH Hilo (2022–2023)</li>
+              </ul>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <ul class="education-list">
+                <li>University of Hawai'i at Hilo — Bachelor's of Science in Nursing</li>
+                <li>University of Hawai'i at Manoa — Graduate Certificate in Applied Computing: Artificial Intelligence and Data Science Track</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore the</p>
+      <h1 class="title">Tools I Use</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>HTML</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>CSS</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>JavaScript</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>TypeScript</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Python</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>C++</h3></div></article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks &amp; Libraries</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>React</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>React Native</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Tailwind CSS</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>NumPy</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>SciPy</h3></div></article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Developer Tools</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Git</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>GitHub</h3></div></article>
+              <article><img src="./assets/checkmark.png" alt="checkmark" class="icon" /><div><h3>Figma</h3></div></article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Some of my recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-profile.png"
+                alt="Screenshot of a portfolio"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Personal Portfolio
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://github.com/alanshin32-svg/personal-portfolio-2026.git'
+                "
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://alanshin32-svg.github.io/personal-portfolio-2026/'
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/placeholder.png"
+                alt="Screenshot of an abstract line"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bakestand App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">Coming soon!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Let's get in touch</p>
+      <h1 class="title">Contact Me!</h1>
+      <div class="contact-info-upper-container">
+        <a class="contact-info-container" href="mailto:alanshin32@gmail.com">
+          <img
+            src="./assets/email_2.png"
+            alt="email button symbolized by drawn envelope"
+            class="icon contact-icon"
+          />
+          <p>alanshin32@gmail.com</p>
+        </a>
+        <a class="contact-info-container" href="https://www.linkedin.com/in/alannah-shinde-98628541a/" target="_blank">
+          <img
+            src="./assets/linkedin.png"
+            alt="linked button symbolized by linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>LinkedIn</p>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class=""nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>          
+        </div>
+      </nav>
+      <p> Copyright &#169 2026 Alannah Shinde </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
