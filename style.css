@@ -1,4 +1,4 @@
-/* general */
+/* General */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
@@ -20,14 +20,14 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* transition */
+/* Transition */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* navigation desktop*/
+/* Navigation Desktop */
 
 nav,
 .nav-links {
@@ -94,7 +94,7 @@ a:has(.logo) {
   padding-top: 1.2rem;
 }
 
-/* hamburger menu*/
+/* Hamburger Menu */
 
 #hamburger-nav {
   display: none;
@@ -177,19 +177,8 @@ a:has(.logo) {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
 
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-/* sections */
+/* Sections */
 
 section {
   position: relative;
@@ -210,7 +199,7 @@ section {
   display: flex;
 }
 
-/* profile section */
+/* Profile Section */
 
 #profile {
   display: flex;
@@ -265,14 +254,14 @@ section {
   gap: 1rem;
 }
 
-/*icons*/
+/* Icons */
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* buttons */
+/* Buttons */
 
 .btn-container {
   display: flex;
@@ -320,11 +309,8 @@ section {
   gap: 1rem;
 }
 
-/* about section */
+/* About Section */
 
-#about {
-  position: relative;
-}
 
 .about-containers {
   gap: 2rem;
@@ -390,7 +376,7 @@ section {
   height: 80%;
 }
 
-/* experience section */
+/* Experience Section */
 
 .experience-sub-title {
   min-height: 3.5rem;
@@ -424,11 +410,8 @@ article .icon,
   cursor: default;
 }
 
-/* projects section */
+/* Projects Section */
 
-#projects {
-  position: relative;
-}
 
 .project-btn:hover {
   background: rgb(53, 53, 53);
@@ -458,7 +441,7 @@ article .icon,
   border-color: rgb(163, 163, 163);
 }
 
-/* contact */
+/* Contact */
 
 #contact {
   display: flex;
@@ -503,7 +486,7 @@ article .icon,
   transition: box-shadow 300ms ease;
 }
 
-/* footer section*/
+/* Footer Section */
 
 footer {
   height: 26vh;
